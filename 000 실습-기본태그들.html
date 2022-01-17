@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!-- 브라우저에게 "이 파일이" html5버전으로 작성되었다는 것을 알림 -->
+<html lang="en">
+<!-- 언어 -->
+
+<head>
+    <meta charset="UTF-8" />
+    <!-- 문자열 인코딩 방식 -->
+    <!-- self closing tag "/>" -->
+    <!-- meta = 데이터 설명을 위한 데이터 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- internet explorer(IE) 문서 표준모드를 edge로 정함 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 반응형 웹을 위한 view port 설정 -->
+    <title>Document</title>
+    <!-- 문서의 제목 -->
+</head>
+
+<body>
+    <a href="https://www.naver.com">네이버</a>
+    <!-- alt + shift + ↓ = 복사 -->
+    <a href="https://www.naver.com" target="_blank">네이버</a>
+    <!-- _black 새탭으로 열기 -->
+    <!-- tagname mdn = html 교과서 -->
+
+    <h1>이것은 제목입니다.</h1>
+    <h2>이것은 제목입니다.</h2>
+    <h3>이것은 제목입니다.</h3>
+    <h4>이것은 제목입니다.</h4>
+    <h4>이것은 제목입니다.</h4>
+    <h5>이것은 제목입니다.</h5>
+    <h6>이것은 제목입니다.</h6>
+
+    <ol>
+        <!-- order 순서가 있다. -->
+        <li>list1</li>
+        <li>list2</li>
+        <li>list3</li>
+    </ol>
+
+    <ul>
+        <!-- unorder 순서가 없다. -->
+        <li>list1</li>
+        <li>list2</li>
+        <li>list3</li>
+    </ul>
+
+    <!-- 금일은 inline 요소와 block 요소의 구분이 제일 중요 -->
+    <p>
+        이것은 p 태그입니다.
+        <!-- block 요소 -->
+    </p>
+
+    <span>
+        이것은 span 태그입니다.
+        <!-- inline 요소 -->
+    </span>
+
+    <img src="/image/akrotiri.jpg" width="360" height="220" alt="코끼리를 나타내는 이미지" />
+
+    <strong>aa</strong>
+
+    <form>
+        <!-- 양식, 서버에 데이터를 전달할 때 사용하는 태그 -->
+        <input type="text" />
+        <input type="password" />
+
+        <select name="쥬스">
+            <option value="오렌지쥬스">오렌지쥬스</option>
+            <option value="포도쥬스">포도쥬스</option>
+            <option value="감귤쥬스" selected>감귤쥬스</option>
+        </select>
+
+        <input type="submit" value="제출하기" />
+
+        <input type="radio" value="남자" />남자
+        <input type="radio" value="여자" />여자
+    </form>
+</body>
+
+</html>
