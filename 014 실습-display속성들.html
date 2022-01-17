@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- display: inline -->
+    <!-- inline span, a 태그가 대표적
+        해당 inline 속성은 줄바꿈이 일어나지 않고 width, height를 
+        주더라도 반영되지 않는다.
+        margin은 좌우만 반영되고 상하는 반영되지 않는다.
+        padding은 좌우가 반영되나 영역을 침범한다. -->
+
+    <span>테스트</span>
+    <a>네이버</a>
+    <div>hello</div>
+
+    <!-- display: block -->
+    <!-- div, p, h1, main, serction 태그가 대표적
+        줄바꿈이 일어나며 기본적으로 한줄을 전체 차지 한다.
+        width, height, margin, padding 모두 적용된다.-->
+
+    <p>test</p>
+    <section>test2</section>
+
+    <!-- display: inline-block -->
+    <!-- button, input, select 태그가 대표적
+        width, height 속성이 적용 가능하며 
+        margin/padding 속성의 상하간격이 지정 가능하다.
+        block 속성과 다르게 한줄전체를 차지하지 않는다.-->
+
+    <button>버튼</button>
+    <input />
+    <div></div>
+
+    <!-- display: none -->
+    <div style="display: none;">보일까?</div>
+
+</body>
+
+</html>

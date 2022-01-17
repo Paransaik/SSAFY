@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-
 <body>
     <h1>회원가입 양식 만들기</h1>
     <form>
@@ -19,19 +17,23 @@
         비밀번호: <input type="password" />
         <br>
 
-        <input type="radio" value="남자" />남자
-        <input type="radio" value="여자" />여자
+        <input type="radio" name="gender" value="남자" ondblclick="this.checked=false"/>남자
+        <input type="radio" name="gender" value="여자" ondblclick="this.checked=false"/>여자
         <br>
+        <!-- ondblclick = "this.checked=false" 다시 클릭 시 취소 -->
 
         <select name="취미">
             <option value="게임하기">게임하기</option>
+            <!-- option * 3 하면 자동으로 3개가 만들어짐 -->
+            <!-- 라인 지정이 안될 경우 ctrl + space -->
+            <!-- div>div*3 -->
             <option value="책읽기">책읽기</option>
             <option value="코딩하기" selected>코딩하기</option>
         </select>
         <br>
 
         <input type="submit" value="제출하기" />
+        <!-- 서버에 전송이 되고, 새로고침이 됨 -->
     </form>
 </body>
-
 </html>

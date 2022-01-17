@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            border: 3px solid black;
+            width: 300px;
+            height: 300px;
+            margin: 10px;
+            text-align: center;
+        }
+        #aa {
+            margin-left: auto;
+        }
+        #bb{
+            margin: 0 auto;
+        }
+        #cc{
+            margin-right: auto;
+        }
+    </style>
+    <!-- block 요소의 가운데 정렬은 자기 자신에게 margin 0 auto를 준다. -->
+    <!-- inline 요소의 가운데 정렬은 자신의 부모에게 text-align: center를 준다. -->
+</head>
+<body>
+    <div id="aa">this is aa</div>
+    <div id="bb">this is bb</div>
+    <div id="cc">this is cc</div>
+    <!-- div는 제일 많이 사용하는 block 요소 -->
+    <!--
+                div                     inline
+        너비, 높이 조절 가능    너비, 높이 조절 불가능(컨텐츠의 크기만)
+
+    -->
+</body>
+</html>
