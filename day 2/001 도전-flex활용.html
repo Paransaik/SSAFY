@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            
+        }
+
+        /* 1. container(부모) -> 주는 속성들 */
+        .header {
+            height: 100px;
+            display: flex;
+            border-bottom: 1px solid gray;
+            /* flex-wrap: wrap; */
+            /* 부모가 한줄에 담을 공간이 부족할 때 줄바꿈을 한다. */
+            /* wrap, wrap-reverse */
+
+            flex-direction: row;
+            /* item이 배치되는 방향을 결정 -> 주축을 가로? 세로? */
+            /* row, row-reverse, column, column-reverse */
+
+            justify-content: space-between;
+            /* 주축 방향으로 item들을 정렬한다. */
+            /* flex-end, space-between, space-around, space-evenly*/
+
+            align-items: center;
+            /* 수직축을 방향으로 아이템을 정렬 */
+            /* flex-start, flex-end, center */
+        }
+
+        .menu-wrapper{
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+        }
+        .menu {
+            width: 100px;
+            height: 30px;
+            text-align: center;
+            border: 1px solid black;
+        }
+
+        .logo {
+            font-size: 36px;
+        }
+
+        .signup-wrapper{
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .login {
+            width: 100px;
+            height: 30px;
+            text-align: center;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="menu-wrapper">
+            <div class="menu">메뉴1</div>
+            <div class="menu">메뉴2</div>
+            <div class="menu">메뉴3</div>
+        </div>
+
+        <a class="logo">Logo</a>
+
+        <div class="signup-wrapper">
+            <div class="login">회원가입</div>
+            <div class="login">로그인</div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
