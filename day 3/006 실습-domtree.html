@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My title</title>
+</head>
+<body>
+    <h1>A heading</h1>
+    <a href="https://www.mcdonalds.co.kr/">Link text</a>
+    <!-- 
+        HTMLCollection [html]0: htmllength: 1[[Prototype]]: HTMLCollection
+        document.children[0].children
+        HTMLCollection(2) [head, body]
+        document.children[0].children[1].children
+        HTMLCollection(3) [h1, a, script]
+        document.children[0].children[1].children[0]
+        <h1>​A heading​</h1>​
+        document.children[0].children[1].children[0].textContent
+        'A heading' 
+    -->
+    <script>
+        document.children[0].children[1].children[0].textContent = "ABC"
+        document.children[0].children[1].children[0].textContent = "이곳을 클릭해 보세요."
+    </script>
+</body>
+</html>
+

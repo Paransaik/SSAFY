@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="btn">고고양</button>
+    <!-- 해당 방식은 react, vue에 많이 씀, 애초에 js + html 프로젝트 들 -->
+    <button class="btn2" onclick="gogo()">고고양2</button>
+
+    <script>
+        const button = document.querySelector('.btn');
+        
+        function gogo(){
+            console.log("GOGO");
+        }
+        // 이벤트 함수 추가
+        // button.addEventListener('click', gogo);
+        button.addEventListener('click', function(e){
+            console.log("GOGO");
+        });
+        // addEventListener(이벤트 이름, 핸들러 이름)
+        // 해당 메서드를 사용하여 이벤트 핸들러(콜백함수)
+        // 콜백 함수는 이벤트 등 간접적으로 실행되는 함수
+        // 이벤트 핸들러는 이벤트 발생 시 호출되는 콜백 함수
+
+    </script>
+</body>
+</html>

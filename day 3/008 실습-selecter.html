@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="head">A heading</h1>
+    <a class="anchor" href="https://www.mcdonalds.co.kr/">Link text</a>
+    <script>
+        // id 값 가져올 때: getElementById
+        // class 값 가져올 때: document.getElementByClassName
+        // CSS선택자를 활용해서 값을 가져올 때: querySelecter
+        // 여러가지 값을 가져올 때: document.querySelecterAll
+        const head = document.getElementById('head');
+        console.log(head);
+        const anchor = document.getElementsByClassName("anchor");
+        console.log(anchor);
+        const head2 = document.querySelector("#head");
+        console.log(head2);
+        const anchor2 = document.querySelector(".anchor");
+        // 한가지 값만 가져옴
+        console.log(anchor2);
+        
+        anchor2.textContent = "BBQ World";
+        console.log(anchor2);
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 스크립트 위치 
+        <script src="./index.js"></script>
+        head에 넣는 경우: script를 모두 로딩하고 나서 브라우저 랜더링을 실행
+            but, 페이지가 뜨는 속도가 느려짐
+            ex) 문서 초기화, 설정이 가벼운 스크립트
+        body에 넣는 경우: DOM Tree가 완성된 상태에서 스크립트 실행,
+            (브라우저가 화면에 노출 된 상태에서 실행)
+        
+        >> <script defer src="./index.js"></script>
+        HTML 파싱과 동시에 스크립트를 로드하고, HTML 파싱이 끝난 경우 바로 스크립트 실행
+        성능면에서 가장 유리
+        head 태그안에 script 코드를 넣음
+    -->
+    <!-- 외부에서 가져올 때는 defer 속성 사용,
+        내부 index.html에서 해결한다면 script를 바디 하단에 둔다. -->
+    <script defer src=".index.js"></script>
+</head>
+<body>
+    
+</body>
+</html>
