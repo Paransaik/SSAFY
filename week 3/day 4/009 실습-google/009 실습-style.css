@@ -1,0 +1,118 @@
+.header_nav{
+    display: flex;
+}
+.header_ul{
+    display: flex;
+    margin-left: auto;
+    list-style: none;
+    padding: 0;
+    align-items: center;
+}
+.header_ul li{
+    margin-left: 10px;
+}
+.toggle_button{
+    background-color: black;
+    border: 1px solid white;
+    padding: 5px 8px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Dark Mode */
+.toggle_button_dark_mode{
+    background-color: white;
+    color: black;
+}
+.body_background_dark_mode{
+    background-color: black;
+}
+.text_dark_mode{
+    /* important: css의 우선순위를 올려준다. */
+    /* inline에 바로 style 줬을 때 */
+    color: white !important;
+}
+
+.main_container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.image_logo{
+    width: 272px;
+}
+.search_container{
+    position: relative;
+    margin-top: 50px;
+}
+.search_icon{
+    position: absolute;
+    width: 17px;
+    top: 13px;
+    left: 10px;
+}
+.search_input {
+    width: 100%;
+    height: 44px;
+    border-radius: 50px;
+    border:  1px solid #dddddd;
+    padding-left: 40px;
+
+}
+
+/* Bookmark */
+.bookmark_section{
+    margin-top: 40px;
+}
+.bookmark_wrapper{
+    display: flex;
+    max-width: 600px;
+    min-width: 430px;
+    flex-wrap: wrap;
+    justify-content: center;
+} 
+.bookmark_item{
+    display: flex;
+    margin-top: 30px;
+    width: 112px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.bookmark_item:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+.bookmark_plus{
+    display: flex;
+    margin-top: 30px;
+    width: 112px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.img_icon_wrapper{
+    display: flex;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color: #f2f3f5;
+    font-size: 24px;
+}
+.img_icon_wrapper img{
+    width: 60%;
+    height: 60%;
+}
+.bookmark_text{
+    margon-top: 5px;
+    color: black;
+}

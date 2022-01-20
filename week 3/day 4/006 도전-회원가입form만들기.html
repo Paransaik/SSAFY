@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* %는 부모 태그 기준으로 결정 */
+        /* vh는 높이, cw는 너비 */
+        .signup-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 40vw;
+            /* vh, vw는 각 모니터 크기에 맞춰서 계산 됨 */
+            /* v = viewport */
+            border: 4px solid black;
+            padding: 20px;
+        }
+        .font {
+            font-size: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="" class='signup-form'>
+        <input type="text" class="id" /><br>
+        <input type="password" class="pass" /><br>
+        
+        <input type="password" class="pass_check" />
+        <span class="pass_status"></span>
+        <a class="font">비밀번호가<br>일치합니다.</br></a>
+        <div>
+            개인정도 이용 동의 <input type="checkbox" class="check_input" />
+        </div>
+        
+
+        <button tpye="button" class='signup'>회원가입</button>
+        <!-- 1. type = "button" 을 넣으면 버튼을 눌러도 새로고침이 일어나지 않음 -->
+        <!-- default tpye = submit -->
+    </form>
+
+    <script>
+        const id = document.querySelector(".id");
+        const pass = document.querySelector(".pass");
+        const signup = document.querySelector(".signup");
+
+        const pass_check = document.querySelector(".pass_check");
+        const pass_status = document.querySelector(".pass_status");
+        const check_input = document.querySelector(".check_input");
+
+        // 정규표현식
+        // RegExp(/(?=.*[a-zA-Z])(?=.*[0-9]).{12,}/);
+        signup.addEventListener("click", function(e){
+            e.preventDefault();
+            console.log("동작");
+            if(id.value.trim() && pass.value.trim() && check_input.checked){
+                if(pass.value === pass_check.value){
+                    alert("회원가입이 완료되었습니다.");
+                }
+                else{
+                    alert("비밀번호가 서로 일치하지 않습니다.");
+                }
+            }else{
+                if(!id.value){
+                    alert("ID를 입력해주세요!!");
+                }
+                if(!pass.value){
+                    alert("PASSWORD를 입력해주세요!!");
+                }
+                if(!(check_input.checked)){
+                    alert("개인 정보 이용 동의를 체크해주세요!!");
+                }
+            }
+            
+            // 0, false, undefind, "" 부정의 의미
+            // 나머지는 긍정의 이미 
+            // !(false) = true
+            // !!(flase) = false
+            console.log();
+            console.log(password.value);
+
+            // email의 형식이 맞는지
+            // password 길이가 맞는지 --> 정규식
+        })
+        
+    </script>
+</body>
+</html>
+
