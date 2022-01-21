@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes ani{
+            100%{
+                background: white;
+            }
+         }
+        .box-wrapper{
+            display: flex;
+        }
+        .box1, .box2
+        {
+            width: 300px;
+            height: 300px;
+            animation: ani infinite 2s alternate;
+            /* alternate: 번갈아하는 */
+        }
+        .box1{
+            background-color: blue;
+        }
+        .box2{
+            background-color: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="box-wrapper">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box1"></div>
+        <div class="box2"></div>
+    </div>
+</body>
+</html>

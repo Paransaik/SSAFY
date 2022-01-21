@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            margin: 80px;
+            width: 180px;
+            height: 360px;
+            border: 5px solid black;
+            /* 깜빡거릴 때 사용하는 속성 */
+            /* 강제로 GPU loding */
+            transform: translate3d(0, 0, 0);
+        }
+        .box:hover{
+            /* perspective 시야 관점 */
+            /* perspective: 관점 */
+            /* transform: perspective(300px) rotateY(45deg) rotateX(45deg); */
+            /* transform: perspective(300px) translateX(450px); */
+            transform: perspective(300px) rotateX(45deg) rotateY(45deg);
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+</body>
+</html>

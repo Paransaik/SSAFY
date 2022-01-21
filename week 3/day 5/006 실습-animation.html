@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes ani{
+            0% {
+                background: black;
+            }
+            30%{
+                background: gray;
+            }   
+            50%{
+                background: blue;
+            }
+            100%{
+                background: skyblue;
+                transform: rotate(150deg);
+            }
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            animation: ani infinite 2s alternate;
+            /* alternate: 번갈아하는 */
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
